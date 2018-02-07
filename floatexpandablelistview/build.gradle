@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
 
 android {
     compileSdkVersion 26
@@ -31,4 +32,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+//添加发布到jcenter的配置信息
+publish {
+    userOrg = 'superz'//bintray.com用户名
+    repoName = 'android-view'//仓库名称
+    groupId = 'com.itz'//jcenter上的路径
+    artifactId = 'FloatExpandableListView'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'This is a custom ExpanableListView which support float its group item.'//描述，不重要
+    website = 'https://github.com/ZhangSir/FloatExpandableListView'//网站，不重要
 }
