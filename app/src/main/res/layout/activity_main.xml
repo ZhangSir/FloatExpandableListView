@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itz.testFEListview.MainActivity">
+
+    <com.itz.floatexpandablelistview.FloatExpandableListView
+        android:id="@+id/felv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="#cfcfcf"
+        android:divider="#cfcfcf"
+        android:dividerHeight="1px"
+        android:gravity="center"
+        android:listSelector="@android:drawable/list_selector_background"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</RelativeLayout>
